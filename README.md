@@ -1,16 +1,97 @@
-# React + Vite
+# tp-final-react-ANAGUZMAN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TRABAJO PRACTICO REACT
 
-Currently, two official plugins are available:
+# 🧩 Proyecto React con Vite y React Router DOM
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto fue creado con **Vite + React**, utilizando **React Router DOM** para la navegación entre páginas.  
+El objetivo es desarrollar una aplicación SPA (Single Page Application) modular y escalable.
 
-## React Compiler
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- **React** (librería principal)
+- **Vite** (entorno de desarrollo rápido)
+- **React Router DOM** (enrutamiento entre páginas)
+- **JavaScript (JSX)** y **CSS**
+- **Visual Studio Code (VS Code)**
+- **Git + GitHub**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Pasos para crear el proyecto desde cero
+
+### 1️⃣ Crear el proyecto con Vite
+
+```bash
+npm create vite@latest
+
+Luego asignamos nombre al Proyecto
+
+cd tp-final-react
+2️⃣ Instalar las dependencias
+en el terminal Bash colocamos:
+npm install
+
+3️⃣ Instalar React Router DOM
+en el terminal Bash colocamos:
+npm install react-router-dom
+
+4️⃣ Estructura de carpetas base
+Ordenamos el Proyecto:
+src/
+ ├── components/
+ │   └── Navbar.jsx
+ ├── pages/
+ │   ├── Home.jsx
+ │   ├── Listado.jsx
+ │   └── Detalle.jsx
+ ├── App.jsx
+ ├── main.jsx
+ ├── index.css
+ └── assets/
+
+5️⃣ Configurar el enrutamiento
+📄 main.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import "./index.css";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+📄 App.jsx
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Listado from "./pages/Listado";
+import Detalle from "./pages/Detalle";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/listado" element={<Listado />} />
+        <Route path="/detalle/:nombre" element={<Detalle />} />
+      </Routes>
+    </>
+  );
+}
+
+export default App;
+
+6️⃣ Ejecutar el proyecto
+en el terminal colocamos:
+npm run dev
+
+abrimos el Navegador http://localhost....
+```
