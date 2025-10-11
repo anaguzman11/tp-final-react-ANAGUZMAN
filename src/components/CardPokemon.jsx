@@ -6,7 +6,7 @@ function CardPokemon({ name, image, id, isDetail = false }) {
   const [favorito, setFavorito] = useState(false);
 
   const toggleFavorito = (e) => {
-    e.preventDefault(); // evita que el clic en el corazón dispare el Link
+    e.preventDefault(); 
     setFavorito(!favorito);
   };
 

@@ -1,0 +1,11 @@
+.listado {
+  background-color: #71c9a4;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+}

@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import CardPokemon from '../components/CardPokemon';
+import './Detalle.css';
 
 function Detalle() {
   const { id } = useParams();
@@ -15,17 +15,21 @@ function Detalle() {
   if (!pokemon) return <p>Cargando...</p>;
 
   return (
-    <div>
-      <CardPokemon
-        name={pokemon.name}
-        image={pokemon.sprites.other['official-artwork'].front_default}
-        id={pokemon.name}
-        isDetail={true}
-      />
-      <h4>Altura: {pokemon.height}</h4>
-      <h4>Peso: {pokemon.weight}</h4>
-      <h4>Tipos: {pokemon.types.map(t => t.type.name).join(', ')}</h4>
-      <h4>Habilidades: {pokemon.abilities.map(a => a.ability.name).join(', ')}</h4>
+    <div className="detalle-container">
+      <div className="detalle-imagen">
+        <img
+          src={pokemon.sprites.other['official-artwork'].front_default}
+          alt={pokemon.name}
+        />
+      </div>
+      <div className="detalle-info">
+        <h2>{pokemon.name}</h2>
+        <p><strong>Altura:</strong> {pokemon.height}</p>
+        <p><strong>Peso:</strong> {pokemon.weight}</p>
+        <p><strong>Tipos:</strong> {pokemon.types.map(t => t.type.name).join(', ')}</p>
+        <p><strong>Habilidades:</strong> {pokemon.abilities.map(a => a.ability.name).join(', ')}</p>
+        <p><strong>Movimientos:</strong> {pokemon.moves.slice(0, 5).map(m => m.move.name).join(', ')}</p>
+      </div>
     </div>
   );
 }
