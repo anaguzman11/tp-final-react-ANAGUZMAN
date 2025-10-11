@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <Link to="/">Home</Link>
-      <Link to="/listado">Pokémons</Link>
+    <nav>
+      <ul>
+        <li><Link to="/">Inicio</Link></li>
+        <li><Link to="/pokemons">Pokémons</Link></li>
+        <li><Link to="/">Favoritos</Link></li>
+      </ul>
     </nav>
   );
 }

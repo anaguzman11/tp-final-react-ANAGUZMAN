@@ -1,8 +1,8 @@
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Listado from "./pages/Listado";
-import Detalle from "./pages/Detalle";
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Listado from './pages/Listado';
+import Detalle from './pages/Detalle';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/listado" element={<Listado />} />
-        <Route path="/detalle/:nombre" element={<Detalle />} />
+        <Route path="/pokemons" element={<Listado />} />
+        <Route path="/pokemons/:id" element={<Detalle />} />
       </Routes>
     </>
   );
