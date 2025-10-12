@@ -16,40 +16,38 @@
 
 .home-text {
   flex: 1;
-  min-width: 280px;
-}
-
-.home-text h1 {
-  font-size: 6rem;
-  color: #ffffff;
-
-  font-family: "Helvetica", sans-serif;
-}
-
-.home-text h2 {
-  font-size: 8rem;
-  color: #ffffff;
-  margin-bottom: 2rem;
-  font-family: "Helvetica", sans-serif;
-}
-
-.home-text p {
-  font-size: 1.5rem;
-  margin-bottom: 0.8rem;
-  color: #f0e9e9;
-}
-
-.home-image {
-  flex: 1;
-  min-width: 200px;
   text-align: center;
+  font-size: 2rem;
+  color: #fafafa;
 }
 
-.home-img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  object-fit: contain;
+.home-title {
+  animation: slideFade 1s ease-out forwards;
+  margin-bottom: 1rem;
+}
+
+.home-title h1 {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 6rem;
+  color: aliceblue;
+}
+
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pokeball-icon {
+  width: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
 .home-button {
@@ -68,27 +66,12 @@
   background-color: #d32f2f;
 }
 
-@media (max-width: 768px) {
-  .home-container {
-    flex-direction: column;
-    padding: 2rem;
-    text-align: center;
-  }
+.home-image {
+  flex: 1;
+  text-align: center;
+}
 
-  .home-text h1 {
-    font-size: 2.2rem;
-  }
-
-  .home-text h2 {
-    font-size: 2.8rem;
-  }
-
-  .home-text p {
-    font-size: 1rem;
-  }
-
-  .home-img {
-    max-width: 200px;
-    margin-top: 1rem;
-  }
+.home-img {
+  max-width: 100%;
+  height: auto;
 }

@@ -1,7 +1,7 @@
 .detalle-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 5rem;
   padding: 2rem;
   align-items: center;
   justify-content: center;
@@ -37,4 +37,93 @@
   .detalle-imagen img {
     width: 180px;
   }
+}
+
+.pokemon-card {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+}
+
+.evolution-section {
+  margin-top: 2rem;
+}
+.evolution-chain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.evolution-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.evolution-stage img {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.evolution-stage img:hover {
+  transform: scale(1.1);
+}
+
+.evolution-stage p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.detalle-info h2,
+.evolution-stage p {
+  text-transform: uppercase;
+  text-align: center;
+}
+.detalle-info h3 {
+  text-align: center;
+}
+
+.detalle-card {
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  transition: transform 0.3s ease;
+}
+
+.detalle-card:hover {
+  transform: translateY(-5px);
+}
+
+.volver-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #ef5350;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.volver-button:hover {
+  background-color: #d32f2f;
 }

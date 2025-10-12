@@ -31,8 +31,17 @@ nav a {
 }
 
 .nav-icon {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+}
+
+.nav-icon a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
 }
 
 .nav-right {
@@ -43,16 +52,26 @@ nav a {
   padding: 0;
 }
 
-.nav-right a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
 .hamburger {
   display: none;
   font-size: 2rem;
   color: white;
   cursor: pointer;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.nav-right a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 768px) {
