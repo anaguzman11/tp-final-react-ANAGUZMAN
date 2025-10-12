@@ -2,29 +2,18 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
-}
-
-nav {
-  background-color: #ef5350;
-  padding: 1rem;
-}
-
-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  gap: 3rem;
   padding: 2rem;
   justify-items: center;
 }
