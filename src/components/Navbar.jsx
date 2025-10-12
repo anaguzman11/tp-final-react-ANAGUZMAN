@@ -6,7 +6,7 @@ function Navbar() {
       <ul>
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/pokemons">Pokémons</Link></li>
-        <li><Link to="/">Favoritos</Link></li>
+        <Link to="/favoritos">Favoritos</Link>
       </ul>
     </nav>
   );

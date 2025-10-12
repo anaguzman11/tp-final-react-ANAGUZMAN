@@ -26,3 +26,25 @@
   height: 100px;
   object-fit: contain;
 }
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.heart {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.heart.active {
+  color: red;
+}

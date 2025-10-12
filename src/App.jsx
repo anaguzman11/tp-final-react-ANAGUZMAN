@@ -3,6 +3,9 @@ import Home from './pages/Home';
 import Listado from './pages/Listado';
 import Detalle from './pages/Detalle';
 import Navbar from './components/Navbar';
+import Favoritos from './pages/Favoritos';
+
+
 
 function App() {
   return (
@@ -12,9 +15,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/pokemons" element={<Listado />} />
         <Route path="/pokemons/:id" element={<Detalle />} />
+        <Route path="/favoritos" element={<Favoritos />} />
       </Routes>
     </>
   );
 }
+
 
 export default App;
