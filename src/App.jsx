@@ -6,16 +6,18 @@ import Navbar from './components/Navbar';
 import Favoritos from './pages/Favoritos';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <>
       <Navbar />
-        <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pokemons" element={<Listado />} />
         <Route path="/pokemons/:id" element={<Detalle />} />
         <Route path="/favoritos" element={<Favoritos />} />
       </Routes>
+      <Footer />
     </>
   );
 }
