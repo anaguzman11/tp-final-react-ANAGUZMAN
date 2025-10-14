@@ -147,3 +147,23 @@
   text-transform: uppercase;
   animation: nombreFadeIn 0.8s ease-out forwards;
 }
+
+@media (max-width: 600px) {
+  .detalle-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detalle-info {
+    max-width: 100%;
+  }
+
+  .detalle-imagen img {
+    width: 180px;
+  }
+
+  .evolution-chain {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

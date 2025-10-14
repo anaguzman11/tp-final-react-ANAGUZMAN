@@ -24,7 +24,7 @@ El objetivo es desarrollar una aplicación SPA (Single Page Application) modular
 
 ### 1️⃣ Crear el proyecto con Vite
 
-```bash
+````bash
 npm create vite@latest
 
 Luego asignamos nombre al Proyecto
@@ -94,4 +94,60 @@ en el terminal colocamos:
 npm run dev
 
 abrimos el Navegador http://localhost....
-```
+
+✨ Funcionalidades implementadas
+🏠 Página Home
+Diseño visual con fondo en gradiente y tipografía destacada.
+
+Botón de navegación hacia el listado de Pokémon.
+
+Imagen decorativa con estilo responsivo.
+
+Animaciones suaves de entrada para los títulos.
+
+Adaptación completa a mobile con media queries.
+
+📦 Navbar
+Menú de navegación con enlaces a Home, Pokémons y Favoritos.
+
+Ícono de Pikachu en el margen superior izquierdo.
+
+Menú hamburguesa funcional en mobile:
+
+Aparece solo en pantallas pequeñas.
+
+Se despliega con animación de deslizamiento.
+
+Se cierra automáticamente al hacer clic en un link.
+
+⭐ Página Favoritos
+Renderizado dinámico desde localStorage.
+
+Cards visuales con nombre e imagen del Pokémon.
+
+Mensaje personalizado cuando no hay favoritos.
+
+Botón para limpiar la lista de favoritos.
+
+Animación suave para el mensaje vacío.
+
+🧩 Estilos y diseño
+Uso de gradientes, sombras y tipografía temática (Press Start 2P).
+
+Animaciones con @keyframes para entradas suaves.
+
+Diseño responsivo en todas las páginas.
+
+Footer con firma personal y ubicación: “Diseñado y desarrollado por Ana Guzmán Iacazzi — San Juan, Argentina”
+
+🧪 Detalles técnicos adicionales
+Uso de useEffect para cargar datos desde la PokéAPI.
+
+Manejo de estado con useState.
+
+Navegación dinámica con Link y Route.
+
+Organización modular de componentes y páginas.
+
+Estilos separados por archivo .css por cada vista.```
+````

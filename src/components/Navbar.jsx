@@ -3,21 +3,28 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuAbierto, setMenuAbierto] = useState(false);
+
+  const cerrarMenu = () => setMenuAbierto(false);
 
   return (
     <nav className="navbar">
-      <div className="nav-left">
-        <img src="/Pikachu.png" alt="Pikachu" className="nav-icon" />
+      <div className="logo">
+        <img src="Pikachu.png" alt="Pikachu" className="logo-img" />
       </div>
 
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+      <button
+        className="hamburger"
+        onClick={() => setMenuAbierto(!menuAbierto)}
+        aria-label="Abrir menú"
+      >
         ☰
-      </div>
+      </button>
 
-      <ul className={`nav-right ${menuOpen ? 'open' : ''}`}>
-        <li><Link to="/">INICIO</Link></li>
-        <li><Link to="/favoritos">FAVORITOS</Link></li>
+      <ul className={`nav-links ${menuAbierto ? 'activo' : ''}`}>
+        <li><Link to="/" onClick={cerrarMenu}>Home</Link></li>
+        <li><Link to="/pokemons" onClick={cerrarMenu}>Pokémons</Link></li>
+        <li><Link to="/favoritos" onClick={cerrarMenu}>Favoritos</Link></li>
       </ul>
     </nav>
   );
