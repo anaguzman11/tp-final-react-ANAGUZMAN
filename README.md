@@ -1,153 +1,68 @@
-# tp-final-react-ANAGUZMAN
+🧪 Trabajo Práctico Final Integrador — Programación Web con React
+Este proyecto fue desarrollado como entrega final del curso de Programación Web con React, cumpliendo con todos los requisitos técnicos y creativos propuestos.
 
-TRABAJO PRACTICO REACT
+🎯 Objetivos cumplidos
+✅ Proyecto creado con Vite + React
 
-# 🧩 Proyecto React con Vite y React Router DOM
+✅ Navegación entre páginas con React Router DOM
 
-Este proyecto fue creado con **Vite + React**, utilizando **React Router DOM** para la navegación entre páginas.  
-El objetivo es desarrollar una aplicación SPA (Single Page Application) modular y escalable.
+✅ Consumo de datos desde la PokeAPI
 
----
+✅ Componentes reutilizables: CardPokemon se usa en Home, Listado y Favoritos
 
-## 🚀 Tecnologías utilizadas
+✅ Diseño completamente responsive para mobile, tablet y desktop
 
-- **React** (librería principal)
-- **Vite** (entorno de desarrollo rápido)
-- **React Router DOM** (enrutamiento entre páginas)
-- **JavaScript (JSX)** y **CSS**
-- **Visual Studio Code (VS Code)**
-- **Git + GitHub**
+✅ Página de detalle con información ampliada del Pokémon
 
----
+✅ Sistema de favoritos persistente con localStorage
 
-## ⚙️ Pasos para crear el proyecto desde cero
+✅ Animaciones suaves y estilos personalizados
 
-### 1️⃣ Crear el proyecto con Vite
+✅ Código limpio, modular y organizado
 
-````bash
-npm create vite@latest
+📄 Estructura de la aplicación
+🏠 Home: Presentación del proyecto, botón de navegación y visuales temáticos
 
-Luego asignamos nombre al Proyecto
+📜 Listado: Cards de Pokémon con nombre, imagen y botón de favoritos
 
-cd tp-final-react
-2️⃣ Instalar las dependencias
-en el terminal Bash colocamos:
+🔎 Detalle: Página con tipo, habilidades, evolución e imagen ampliada
+
+⭐ Favoritos: Página con cards dinámicas desde localStorage, botón para limpiar
+
+♻️ Componente reutilizable
+El componente CardPokemon se utiliza en:
+
+Listado de Pokémon
+
+Página de Favoritos
+
+Página de Detalle (modo ampliado)
+
+📱 Diseño Responsivo
+Todas las vistas se adaptan correctamente a distintos tamaños de pantalla. Se aplicaron media queries, layouts flexibles y tamaños relativos para lograr una experiencia fluida en mobile, tablet y desktop.
+
+❤️ Funcionalidad extra: Favoritos
+Se puede agregar un Pokémon a favoritos desde el listado o el detalle.
+
+Los favoritos se guardan en localStorage y se renderizan dinámicamente.
+
+Se incluye botón para limpiar la lista.
+
+🚀 Instalación y ejecución
+bash
+
+# Clonar el repositorio
+
+git clone https://github.com/tu-usuario/tp-final-react-anaguzman
+
+# Instalar dependencias
+
 npm install
 
-3️⃣ Instalar React Router DOM
-en el terminal Bash colocamos:
-npm install react-router-dom
+# Ejecutar en modo desarrollo
 
-4️⃣ Estructura de carpetas base
-Ordenamos el Proyecto:
-src/
- ├── components/
- │   └── Navbar.jsx
- ├── pages/
- │   ├── Home.jsx
- │   ├── Listado.jsx
- │   └── Detalle.jsx
- ├── App.jsx
- ├── main.jsx
- ├── index.css
- └── assets/
-
-5️⃣ Configurar el enrutamiento
-📄 main.jsx
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
-import "./index.css";
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
-📄 App.jsx
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Listado from "./pages/Listado";
-import Detalle from "./pages/Detalle";
-
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/listado" element={<Listado />} />
-        <Route path="/detalle/:nombre" element={<Detalle />} />
-      </Routes>
-    </>
-  );
-}
-
-export default App;
-
-6️⃣ Ejecutar el proyecto
-en el terminal colocamos:
 npm run dev
+Abrir en navegador: http://localhost:5173
 
-abrimos el Navegador http://localhost....
-
-✨ Funcionalidades implementadas
-🏠 Página Home
-Diseño visual con fondo en gradiente y tipografía destacada.
-
-Botón de navegación hacia el listado de Pokémon.
-
-Imagen decorativa con estilo responsivo.
-
-Animaciones suaves de entrada para los títulos.
-
-Adaptación completa a mobile con media queries.
-
-📦 Navbar
-Menú de navegación con enlaces a Home, Pokémons y Favoritos.
-
-Ícono de Pikachu en el margen superior izquierdo.
-
-Menú hamburguesa funcional en mobile:
-
-Aparece solo en pantallas pequeñas.
-
-Se despliega con animación de deslizamiento.
-
-Se cierra automáticamente al hacer clic en un link.
-
-⭐ Página Favoritos
-Renderizado dinámico desde localStorage.
-
-Cards visuales con nombre e imagen del Pokémon.
-
-Mensaje personalizado cuando no hay favoritos.
-
-Botón para limpiar la lista de favoritos.
-
-Animación suave para el mensaje vacío.
-
-🧩 Estilos y diseño
-Uso de gradientes, sombras y tipografía temática (Press Start 2P).
-
-Animaciones con @keyframes para entradas suaves.
-
-Diseño responsivo en todas las páginas.
-
-Footer con firma personal y ubicación: “Diseñado y desarrollado por Ana Guzmán Iacazzi — San Juan, Argentina”
-
-🧪 Detalles técnicos adicionales
-Uso de useEffect para cargar datos desde la PokéAPI.
-
-Manejo de estado con useState.
-
-Navegación dinámica con Link y Route.
-
-Organización modular de componentes y páginas.
-
-Estilos separados por archivo .css por cada vista.```
-````
+✨ Autoría
+Diseñado y desarrollado por Ana Guzmán Iacazzi 📍 San Juan, Argentina 🧩 Proyecto final para Programación Web con React
