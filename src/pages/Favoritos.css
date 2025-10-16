@@ -24,14 +24,6 @@ h2 {
   }
 }
 
-p {
-  text-align: center;
-  color: white;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  animation: fadeSlide 0.8s ease-out forwards;
-}
-
 .limpiar-button {
   display: block;
   margin: 1rem auto 2rem;

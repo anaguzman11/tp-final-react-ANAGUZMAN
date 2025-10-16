@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+ import { useEffect, useState } from 'react';
 import CardPokemon from '../components/CardPokemon';
 import './Favoritos.css';
 
@@ -35,13 +35,13 @@ function Favoritos() {
       {pokemons.length === 0 ? (
         <p className="mensaje-vacio">No hay favoritos aún.</p>
       ) : (
-        <div className="grid">
+        <div className="card-grid">
           {pokemons.map(pokemon => (
             <CardPokemon
               key={pokemon.id}
               name={pokemon.name}
               image={pokemon.sprites.front_default}
-              id={pokemon.name}
+              id={pokemon.id}
             />
           ))}
         </div>
