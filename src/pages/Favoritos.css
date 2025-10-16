@@ -40,3 +40,10 @@ h2 {
 .limpiar-button:hover {
   background-color: #d32f2f;
 }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+}

@@ -18,6 +18,10 @@
   color: inherit;
   display: block;
 }
+.card-pokemon {
+  width: 100%;
+  max-width: 240px;
+}
 
 .pokemon-image {
   width: 160px;

@@ -25,13 +25,13 @@ function CardPokemon({ name, image, id, isDetail = false }) {
     setFavorito(!favorito);
   };
 
-  return (
-    <div className={`card-pokemon ${isDetail ? 'detail' : 'list'}`}>
-      {isDetail ? (
-        <>
-          <img src={image} alt={name} className="pokemon-image-large" />
-          <h2>{name}</h2>
-        </>
+return (
+<div className={`card-pokemon ${isDetail ? 'detail' : 'list'}`}>
+{isDetail ? (
+<>
+<img src={image} alt={name} className="pokemon-image-large" />
+<h2>{name}</h2>
+</>
       ) : (
         <Link to={`/pokemons/${id}`} className="card-link">
           <img src={image} alt={name} className="pokemon-image" />

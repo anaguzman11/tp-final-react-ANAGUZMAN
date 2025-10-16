@@ -41,11 +41,12 @@ function Detalle() {
     <div className="detalle-card">
     <div className="detalle-container">
     <div className="detalle-imagen">
+    <h2 className="nombre-detalle">{pokemon.name}</h2>
     <img src={`https://img.pokemondb.net/artwork/${pokemon.name}.jpg`} alt={pokemon.name}/>
     </div>
 
     <div className="detalle-info">
-    <h2>{pokemon.name}</h2>
+    <h2 className="nombre-detalle">{pokemon.name}</h2>
     <li className="tipo">
     <strong>Tipo:</strong> {pokemon.types.map(t => t.type.name).join(', ')}</li>
     <li className="habilidad">
