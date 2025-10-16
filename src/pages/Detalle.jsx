@@ -41,7 +41,7 @@ function Detalle() {
     <div className="detalle-card">
     <div className="detalle-container">
     <div className="detalle-imagen">
-    <h2 className="nombre-detalle">{pokemon.name}</h2>
+   
     <img src={`https://img.pokemondb.net/artwork/${pokemon.name}.jpg`} alt={pokemon.name}/>
     </div>
 
